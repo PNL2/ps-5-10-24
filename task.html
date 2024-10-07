@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-9-24</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a>pre{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="./1.png" target="_self">
+        1.To print the factorial of the maximum digit in the number
+        <pre>
+            var num=prompt("Enter number "),prod=1;
+            var max= num[0];
+            for(i in num){
+                if(num[i]>max){
+                    max=num[i];
+                }
+            }
+            for(var i=1;i<=max;i++){
+                    prod=prod*i;
+            }
+            console.log("Maximum Factorial is: "+prod);
+        </pre>
+    </a><br><br>
+    <a href="./2.png" target="_self">2.To find the reverse of a number without using string and methods
+        <pre>
+            var num=342,res="";
+            if(num>0){
+                while(num>0){
+                    var i = num%10;
+                    res+= +(i);
+                    num=Math.trunc(num/10);
+                }
+            }
+            console.log( +res);
+        </pre>
+    </a><br><br>
+</body>
+</html>
